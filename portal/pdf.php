@@ -829,7 +829,7 @@ $Gender      = $FetchPatient['sex'] ?? null;
                         <!-- SIGNATURE -->
                         <div style="float:right; font-size:14px; margin-top:50px; margin-bottom:50px; text-align:center">
                             <center>
-                                <img src="../vendors/images/sign.jpeg" width="150" height="40" alt="Signature">
+                                <img src="../assets/images/sign.jpeg" width="150" height="40" alt="Signature">
                             </center>
                             ______________________________<br>
                             <p style="font-weight:bold">MLS (DR) D.D AJAYI</p>

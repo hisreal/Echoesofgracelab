@@ -53,7 +53,7 @@
                         <a class="nav-link dropdown-toggle arrow-none nav-user" data-bs-toggle="dropdown" href="#" role="button"
                             aria-haspopup="false" aria-expanded="false">
                             <span class="account-user-avatar">
-                                <img src="../assets/images/users/avatar-1.jpg" alt="user-image" width="32" class="rounded-circle">
+                                <img src="../assets/images/users/avatar.jpeg" alt="user-image" width="32" class="rounded-circle">
                             </span>
                             <span class="d-lg-block d-none">
                                 <h5 class="my-0 fw-normal">Admin <i
@@ -90,7 +90,7 @@
                             </a>-->
 
                             
-                            <a href="auth-logout-2.html" class="dropdown-item">
+                            <a href="includes/logout.php" class="dropdown-item">
                                 <i class="ri-logout-box-line fs-18 align-middle me-1"></i>
                                 <span>Logout</span>
                             </a>
