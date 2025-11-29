@@ -1,3 +1,9 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+?>
+
 <?php require_once('includes/usersession.php'); ?>
 <?php require_once('admin.selector.php'); ?>
 <!DOCTYPE html>
