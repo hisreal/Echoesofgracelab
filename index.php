@@ -20,16 +20,12 @@
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body class="authentication-bg position-relative">
+<body class="position-relative">
     <div class="account-pages pt-2 pt-sm-5 pb-4 pb-sm-5 position-relative">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xxl-8 col-lg-10">
+                <div class="col-md-4">
                     <div class="card overflow-hidden">
-                        <div class="row g-0">
-                            <div class="col-lg-6 d-none d-lg-block p-2">
-                            </div>
-                            <div class="col-lg-6">
                                 <div class="d-flex flex-column h-100">
                                     <div class="auth-brand p-4">
                                        <!-- <a href="index-2.html" class="logo-light">
