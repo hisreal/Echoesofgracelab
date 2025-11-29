@@ -229,6 +229,22 @@
    <script src="../assets/js/pages/tabledit.init.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-tabledit/1.2.3/jquery.tabledit.min.js"></script>
+<script>
+document.querySelectorAll('.toggle-password').forEach(button => {
+    button.addEventListener('click', function () {
+        const inputId = this.getAttribute('data-target');
+        const input   = document.getElementById(inputId);
+
+        if (input.type === "password") {
+            input.type = "text";
+            this.textContent = "Hide";
+        } else {
+            input.type = "password";
+            this.textContent = "Show";
+        }
+    });
+});
+</script>
 
 <script>
 $(document).ready(function(){
@@ -279,5 +295,4 @@ $(document).ready(function(){
 </body>
 
 
-<!-- Mirrored from techzaa.in/velonic/layouts/tables-datatable.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 02:08:34 GMT -->
 </html>

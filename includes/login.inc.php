@@ -2,8 +2,7 @@
 session_start();
 header('Content-Type: application/json');
 require 'dbh.php';
-
-$response = [];
+require_once 'audit.php'; // include the logging function
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -19,14 +18,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
-    // Prepared statement to prevent SQL injection
+    // Prepared statement
     $stmt = $conn->prepare("SELECT id, email, pwd FROM admin WHERE email = ? LIMIT 1");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $result = $stmt->get_result();
     $user = $result->fetch_assoc();
 
-    // If user not found
     if (!$user) {
         echo json_encode([
             'success' => false,
@@ -36,7 +34,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
-    // Verify hashed password
     if (!password_verify($password, $user['pwd'])) {
         echo json_encode([
             'success' => false,
@@ -46,8 +43,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
-    // Login successful — create secure session
+    // Correct login
     session_regenerate_id(true);
+
+    // LOG ACTION (fixed)
+    logAction($conn, $user['id'], "Login", "Admin logged in");
 
     $_SESSION['logged_in'] = true;
     $_SESSION['user_id'] = $user['id'];

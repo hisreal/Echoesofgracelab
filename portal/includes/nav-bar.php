@@ -19,8 +19,21 @@
                     </li>
                      <li class="side-nav-item">
                         <a href="registration.php" class="side-nav-link">
-                            <i class="ri-dashboard-3-line"></i>
+                            <i class="ri-account-circle-fill"></i>
                             <span> Register New Patient </span>
+                        </a>
+                    </li>
+                      <li class="side-nav-item">
+                        <a href="changepwd.php" class="side-nav-link">
+                            <i class="ri-door-lock-fill"></i>
+                            <span>Change Password </span>
+                        </a>
+                    </li>
+
+                     <li class="side-nav-item">
+                        <a href="includes/logout.php" class="side-nav-link">
+                            <i class="ri-key-line"></i>
+                            <span> Logout </span>
                         </a>
                     </li>
                 </ul>

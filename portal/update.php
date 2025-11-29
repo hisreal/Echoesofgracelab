@@ -32,7 +32,7 @@ $Gender      = $FetchPatient['sex'] ?? null;
                     <div class="card">
                         
                         <div class="card-body">
-								<a href="index.php" class="btn btn-secondary">Go Back</a>
+								<a href="./" class="btn btn-secondary">Go Back</a>
                                 <br>
                                 <br>
                            <?php echo'<form action="includes/updator.php" autocomplete="off" method="POST">
@@ -99,7 +99,7 @@ $Gender      = $FetchPatient['sex'] ?? null;
 																		<div class="col-md-4 col-sm-12">
 																			<div class="form-group">
 																				<label style="font-weight: bold">Date Received </label>
-																				<input class="form-control date-picker" name="date_receive"  value="'.$FetchPatient['date_receive'].'" type="text">
+																				<input class="form-control date-picker" name="date_receive"  value="'.$FetchPatient['date_receive'].'" type="date">
 																			</div>
 																		</div>
 																	</div>

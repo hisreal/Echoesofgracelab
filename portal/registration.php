@@ -14,7 +14,9 @@ require_once("includes/nav-bar.php");
                 <div class="col-md-8 col-sm-12">
                     <div class="card">
                         <div class="card-body">
-
+                    	<a href="./" class="btn btn-secondary">Go Back</a>
+                            <br>
+                            <br>
                             <form action="includes/updator.php" autocomplete="off" method="POST">
                                 <div class="row">
                                     <div class="col-md-5 col-sm-10">
@@ -61,7 +63,7 @@ require_once("includes/nav-bar.php");
                                     <div class="col-md-5 col-sm-12">
                                         <div class="form-group">
                                             <label style="font-weight: bold">Email</label>
-                                            <input type="text" name="clinical_diagnosis" class="form-control">
+                                            <input type="text"  name="clinical_diagnosis" class="form-control">
                                         </div>
                                     </div>
                                 </div><!-- .row -->
@@ -84,7 +86,7 @@ require_once("includes/nav-bar.php");
                                     <div class="col-md-4 col-sm-12">
                                         <div class="form-group">
                                             <label style="font-weight: bold">Date Received</label>
-											 <input class="form-control" id="example-date" type="date"
+											 <input class="form-control" required id="example-date" type="date"
                                                         name="date_receive">
                                         </div>
                                     </div>
@@ -103,7 +105,7 @@ require_once("includes/nav-bar.php");
                                     <div class="col-md-3 col-sm-12">
                                         <div class="form-group">
                                             <label style="font-weight: bold">Phone Number</label>
-                                            <input type="number" name="phone_number" class="form-control">
+                                            <input type="number" required name="phone_number" class="form-control">
                                         </div>
                                     </div>
 
@@ -119,7 +121,6 @@ require_once("includes/nav-bar.php");
                                     <button type="submit" name="patient_reg" class="btn btn-success">
                                         Save Changes
                                     </button>
-                                   	<a href="index.php" class="btn btn-secondary">Go Back</a>
                                 </div>
 
                             </form>

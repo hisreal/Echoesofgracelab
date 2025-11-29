@@ -11,13 +11,13 @@ ini_set('display_startup_errors', 1);
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Home Page || Echoes of Grace Medical Laboratory</title>
+    <title>Echoes of Grace Medical Laboratory System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully responsive admin theme which can be used to build CRM, CMS,ERP etc." name="description" />
     <meta content="Techzaa" name="author" />
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+    <link rel="shortcut icon" href="../assets/images/echoes.png">
 <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 

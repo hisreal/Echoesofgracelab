@@ -29,7 +29,7 @@ require_once("includes/nav-bar.php");
                     <!-- end page title -->
 
                     <div class="row">
-                         <div class="col-xxl-3 col-sm-6">
+                         <div class="col-xxl-3 col-sm-3">
                             <div class="card widget-flat text-bg-primary">
                                 <div class="card-body">
                                     <div class="float-end">
@@ -44,7 +44,7 @@ require_once("includes/nav-bar.php");
                                 </div>
                             </div>
                         </div> <!-- end col-->
-                        <div class="col-xxl-3 col-sm-6">
+                        <div class="col-xxl-3 col-sm-3">
                             <div class="card widget-flat text-bg-info">
                                 <div class="card-body">
                                     <div class="float-end">
@@ -59,7 +59,7 @@ require_once("includes/nav-bar.php");
                                 </div>
                             </div>
                         </div> <!-- end col-->
-                         <div class="col-xxl-3 col-sm-6">
+                         <div class="col-xxl-3 col-sm-3">
                             <div class="card widget-flat text-bg-purple">
                                 <div class="card-body">
                                     <div class="float-end">
@@ -74,7 +74,7 @@ require_once("includes/nav-bar.php");
                                 </div>
                             </div>
                         </div> <!-- end col-->
-                        <div class="col-xxl-3 col-sm-6">
+                        <div class="col-xxl-3 col-sm-3">
                             <div class="card widget-flat text-bg-pink">
                                 <div class="card-body">
                                     <div class="float-end">
